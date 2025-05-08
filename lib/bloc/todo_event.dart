@@ -10,3 +10,10 @@ final class TodoEventAdd extends TodoEvent {
     required this.date
   });
 }
+
+final class TodoEventComplete extends TodoEvent {
+  final int index;
+  TodoEventComplete({
+    required this.index
+  });
+}
